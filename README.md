@@ -1,4 +1,4 @@
-# User-Profile
+# Vue.JS UserProfile
 
 A user profile made with Vue.js v2 and backend running on PHP, SQLite.
 
