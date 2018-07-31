@@ -30,7 +30,7 @@ export default {
   @import "../scss/style.scss";
 
   .comment { 
-    padding: 30px 20px;
+    padding: 30px;
     border-bottom: 1px solid $gray-lightest;
 
     &:last-of-type {
@@ -46,7 +46,7 @@ export default {
 
     &__body {
       text-align: left;
-      padding: 0 50px 0 60px;
+      padding-left: 55px;
     }
 
     &__name {
@@ -54,6 +54,10 @@ export default {
       font-size: $font-small;
       color: $primary;
       font-weight: 600;
+    }
+
+    &__msg {
+      padding-right: 35px;
     }
 
     &__date {

@@ -40,7 +40,7 @@
                     </span>
                 </div>
             </div>
-            <a class="user__button button button--big">
+            <a  v-on:click="addFollower" :class="{followed: isFollowed}" class="user__button button button--big">
                 follow
             </a>
         </div>
@@ -59,7 +59,8 @@ export default  {
         following: 723,
         followers: 4433,
         isLiked: false,
-        imageSrc: './src/assets/heart.svg'
+        imageSrc: './src/assets/heart.svg',
+        isFollowed: false
     }
   },
   methods: {
@@ -71,6 +72,14 @@ export default  {
       } else {
         this.likes -= 1
         this.imageSrc = './src/assets/heart.svg'
+      }
+    },
+    addFollower: function() {
+      this.isFollowed = !this.isFollowed
+      if (this.isFollowed == true) {
+        this.followers += 1
+      } else {
+        this.followers -= 1
       }
     }
   },

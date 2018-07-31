@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
+dist/
 /w3cErrors/
 /w3cErrors/*
 npm-debug.log
