@@ -4,7 +4,7 @@ A user profile made with Vue.js v2 and backend running on PHP, SQLite.
 
 ## Run the API
 
-To fire up a PHP dev server, cd into `api` folder and run `php -S localhost:3434`.
+To fire up a PHP dev server, cd into `api` and run `php -S localhost:3434`.
 
 ## Build Setup
 
