@@ -1,0 +1,61 @@
+//## Input
+
+.input {
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+    padding: 8px 0;
+    color: $light;
+    font-size: $font-big;
+    border: 2px solid $gray-border;
+
+    &--bottom {
+        border: none;
+        border-bottom: 2px solid $gray-border;
+    }
+}
+
+//## Placeholder
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: $light;;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: $light;;  
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: $light;;  
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: $light;;  
+}
+
+//## Focus
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input-line {
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: $secondary;
+  z-index: 10;
+  margin: -32px auto 0;
+  transition: width 0.3s ease;
+}
+
+input:focus + .input-line,
+textarea:focus + .input-line {
+  width: 90%;
+}
+

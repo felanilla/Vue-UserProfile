@@ -1,7 +1,6 @@
 <?php
 /* 
-* API for to store and list all comments
-* PHP and SQLite using PDO
+* API working with PHP and SQLite using PDO
 */
 
 
@@ -28,7 +27,9 @@ try {
 	json_response(['error' => 'Unable to open db connection '], 500);
 }
 
-// Uncomment to empty the databsae
+/**************************************
+ * Uncomment to clear the data    *
+ **************************************/
 // empty_comments($dbh);
 
 /**************************************
@@ -135,7 +136,7 @@ function transform($comm) {
 		'id' => (int) $comm['id'],
 		'name' => $comm['name'],
 		'message' => $comm['message'],
-		'time' => date('j M, Y', $comm['time']),
+		'time' => date('j M', $comm['time']),
 	];
 }
 

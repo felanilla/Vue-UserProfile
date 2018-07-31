@@ -1,0 +1,11 @@
+//## Typography
+@import "../variables";
+@import "../mixins";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+p,
+span {
+    font-size: $font-base;
+	font-family: $primary-font;
+}
