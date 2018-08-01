@@ -91,6 +91,12 @@ img {
   max-width: 100%;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 textarea {
   resize: none;
   -moz-appearance:none;
