@@ -5,6 +5,7 @@
 
 .button {
     display: block;
+    height: 46px;
     margin: 20px auto 10px;
     text-align: center;
     background-color: $secondary;
@@ -12,6 +13,7 @@
     font-size: $font-small;
     letter-spacing: 4.2px;
     color: $default;
+    line-height: 46px;
     border: none;
     border-radius: 100px;
     text-transform: uppercase;
@@ -19,9 +21,11 @@
     cursor: pointer;
 
     &--big {
-        width: 248px;
-        height: 46px;
-        line-height: 46px;
+        width: 250px;
+    }
+
+    &--small {
+         width: 125px;
     }
 
     &:hover {
