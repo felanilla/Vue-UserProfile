@@ -24,6 +24,7 @@
     right: 0;
     bottom: 0;
     margin: auto;
+    width: 95%;
     z-index: 101;
     padding: 15px;
     background: #fff;
@@ -32,6 +33,9 @@
     @include flexbox;
     @include flex-direction(column);
     @include justify-content(center);
+    @include breakpoint(md) {
+        width: 400px;
+    }
 }
 
 .vodal-header {

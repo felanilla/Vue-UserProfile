@@ -167,7 +167,7 @@
             }
         }
         &__socials {
-            width: 100%;
+            width: 90%;
             max-width: 280px;
             height: 42px;
             margin: 20px auto 0;
